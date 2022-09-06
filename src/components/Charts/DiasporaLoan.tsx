@@ -1,11 +1,11 @@
 import React from 'react';
-import {Cell, Pie, PieChart, ResponsiveContainer} from "recharts";
+import {Cell, Legend, Pie, PieChart, ResponsiveContainer} from "recharts";
 
 function DiasporaLoan() {
   
   const data = [
-    {name: 'Group A', value: 1900000},
-    {name: 'Group B', value: 2100000},
+    {name: 'Loan Balance', value: 1900000},
+    {name: 'Amount Repaid', value: 2100000},
   ];
   
   const COLORS = ['#ccc', '#ffab00']
@@ -40,6 +40,7 @@ function DiasporaLoan() {
   return (
     <ResponsiveContainer width="100%" height={200}>
       <PieChart width={400} height={400}>
+        <Legend verticalAlign="bottom" height={36} />
         <Pie
           data={data}
           cx="50%"
