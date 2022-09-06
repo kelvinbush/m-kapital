@@ -6,6 +6,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  top: 0;
+  box-shadow: var(--shadow-light);
 
   &__nav {
     display: flex;

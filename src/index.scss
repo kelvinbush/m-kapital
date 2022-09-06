@@ -49,3 +49,11 @@ body {
   line-height: 1.6;
 }
 
+.area {
+  margin-left: -4rem;
+}
+
+.recharts-pie-labels > .recharts-layer {
+  background-color: var(--color-grey-light-4) !important;
+}
+

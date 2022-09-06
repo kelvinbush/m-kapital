@@ -1,0 +1,55 @@
+.current {
+  padding: 1.2rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+
+
+  &__tabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    p {
+
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    color: var(--color-primary);
+
+    svg {
+      fill: black;
+      margin-left: 1rem;
+    }
+  }
+
+  &__pie {
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+
+      p:last-child {
+        color: green;
+      }
+    }
+
+    .chart {
+      width: 100%;
+      margin: 0 !important;
+    }
+  }
+
+  .borrow {
+    color: var(--color-grey-dark-3);
+  }
+}
+
+.active {
+
+}
