@@ -1,5 +1,46 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap');
+
+:root {
+  --color-primary: #ffab00;
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
 }
+
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; //900px
+$bp-small: 37.5em; // 600px
+$bp-smaller: 31.25em; // 500px
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
