@@ -1,0 +1,76 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: var(--shadow-light);
+
+  &__actions {
+    padding: 1.2rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+
+    .content {
+      color: var(--color-grey-dark-3);
+      font-size: 1.5rem;
+    }
+
+    &__calls {
+      display: flex;
+      align-items: center;
+      width: min(90%, 35rem);
+      column-gap: 3rem;
+      margin: 2rem 0;
+
+
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--color-primary-light-1);
+        width: min(60%, 15rem);
+        padding: 1.2rem;
+        border-radius: 0.8rem;
+
+        svg {
+          width: 3.3rem;
+          height: 3.3rem;
+          border-radius: 50%;
+          background-color: #fff;
+          padding: 0.8rem;
+        }
+      }
+    }
+
+  }
+
+  &__stats {
+    background-color: var(--color-primary);
+    border-radius: 0.8rem;
+    padding: 1.2rem;
+
+    p {
+      font-weight: 500;
+      font-size: 1.7rem;
+    }
+
+    div {
+      background-color: var(--color-primary-light-2);
+      padding: 1.2rem;
+      border-radius: 0.8rem;
+      margin-bottom: 0.5rem;
+
+      p {
+        font-weight: 500;
+        font-size: 1.9rem;
+      }
+
+      p:last-child {
+        font-weight: 400;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+
