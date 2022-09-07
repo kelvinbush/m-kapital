@@ -8,7 +8,7 @@ const Current = () => {
   return (
     <div className={styles.current}>
       <div className={styles.current__tabs}>
-        <p>Current Loans</p>
+        <p className={styles.current__tabs_active}>Current Loans</p>
         <p>Current Private equity</p>
       </div>
       <div className={styles.current__header}>

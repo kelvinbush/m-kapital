@@ -19,7 +19,7 @@
 $bp-largest: 75em; // 1200px
 $bp-large: 68.75em; // 1100px
 $bp-medium: 56.25em; //900px
-$bp-small: 37.5em; // 600px
+$bp-small: 43.75em; // 700px
 $bp-smaller: 31.25em; // 500px
 
 * {
@@ -36,10 +36,6 @@ $bp-smaller: 31.25em; // 500px
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-
-  @media only screen and (max-width: $bp-large) {
-    font-size: 50%;
-  }
 }
 
 body {
@@ -51,9 +47,30 @@ body {
 
 .area {
   margin-left: -4rem;
+  margin-right: 0 !important;
+  width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: -2rem;
+  }
+}
+
+.bar {
+  margin: 0 auto;
 }
 
 .recharts-pie-labels > .recharts-layer {
   background-color: var(--color-grey-light-4) !important;
+}
+
+@media screen and (min-width: 700px) {
+  .App {
+    display: flex;
+    position: relative;
+  }
+
+  body {
+    overflow-y: hidden;
+  }
 }
 

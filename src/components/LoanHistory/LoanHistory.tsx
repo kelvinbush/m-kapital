@@ -1,5 +1,7 @@
 import React from 'react';
 import {Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis} from 'recharts';
+import styles from './LoanHistory.module.scss'
+import {BiChevronDown} from "react-icons/bi";
 
 function LoanHistory() {
   
@@ -32,15 +34,17 @@ function LoanHistory() {
   ]
   
   return (
-    <div>
-      <p>Loan History</p>
-      <ResponsiveContainer width="99%" height={300}>
-        <BarChart width={300} height={300} data={data}>
-          <XAxis dataKey="name"  tickLine={false} />
-          <Tooltip />
-          <Bar dataKey="uv" fill="#ffab00" />
-        </BarChart>
-      </ResponsiveContainer>
+    <div className={styles.container}>
+      <p>Loan History <span><BiChevronDown /></span></p>
+      <div style={{height: "230px", width: "auto"}}>
+        <ResponsiveContainer className={"bar"}>
+          <BarChart data={data}>
+            <XAxis dataKey="name" tickLine={false} />
+            <Tooltip />
+            <Bar dataKey="uv" fill="#ffab00" />
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
     </div>
   );
 }

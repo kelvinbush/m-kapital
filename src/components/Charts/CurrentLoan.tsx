@@ -41,27 +41,28 @@ function CurrentLoan() {
     }
   ];
   return (
-    
-    <ResponsiveContainer className={'area'} width="99%" height={300}>
-      <AreaChart
-        data={data}
-      >
-        <defs>
-          <linearGradient id="MyGradient" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="100%" stopColor="rgba(255,255,255,0)" />
-            <stop offset="100%" stopColor="rgba(255,255,255,0)" />
-          </linearGradient>
-        </defs>
-        <CartesianGrid horizontal={false} />
-        <XAxis dataKey="name"  tickLine={false} interval="preserveEnd"/>
-        <YAxis
-          tickLine={false}
-          interval="preserveEnd"
-          tickFormatter={(value) => `${value.toLocaleString().slice(0, -4)}k`}/>
-        <Tooltip />
-        <Area type="monotone" dataKey="uv" stroke="#ffab00" fill="url(#MyGradient)" />
-      </AreaChart>
-    </ResponsiveContainer>
+    <div style={{height: "200px",  width: "auto"}}>
+      <ResponsiveContainer className={'area'}>
+        <AreaChart
+          data={data}
+        >
+          <defs>
+            <linearGradient id="MyGradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="100%" stopColor="rgba(255,255,255,0)" />
+              <stop offset="100%" stopColor="rgba(255,255,255,0)" />
+            </linearGradient>
+          </defs>
+          <CartesianGrid horizontal={false} />
+          <XAxis dataKey="name" tickLine={false} interval="preserveEnd" />
+          <YAxis
+            tickLine={false}
+            interval="preserveEnd"
+            tickFormatter={(value) => `${value.toLocaleString().slice(0, -4)}k`} />
+          <Tooltip />
+          <Area type="monotone" dataKey="uv" stroke="#ffab00" fill="url(#MyGradient)" />
+        </AreaChart>
+      </ResponsiveContainer>
+    </div>
   );
 }
 

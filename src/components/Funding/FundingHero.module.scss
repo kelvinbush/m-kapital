@@ -1,9 +1,15 @@
 .hero {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: var(--shadow-light);
+
+  @media screen and (min-width: 830px) {
+    flex-direction: row;
+    grid-template-columns: 1.5fr 1fr;
+    justify-content: space-between;
+  }
 
   &__actions {
     padding: 1.2rem;
@@ -19,7 +25,6 @@
     &__calls {
       display: flex;
       align-items: center;
-      width: min(90%, 35rem);
       column-gap: 3rem;
       margin: 2rem 0;
 
@@ -32,6 +37,11 @@
         width: min(60%, 15rem);
         padding: 1.2rem;
         border-radius: 0.8rem;
+
+        &:hover {
+          cursor: pointer;
+          background-color: var(--color-primary);
+        }
 
         svg {
           width: 3.3rem;
