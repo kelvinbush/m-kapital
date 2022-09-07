@@ -8,27 +8,27 @@ function LoanHistory() {
   const data = [
     {
       "name": "Jan",
-      "uv": 0
+      "kes": 0
     },
     {
       "name": "Feb",
-      "uv": 0,
+      "kes": 0,
     },
     {
       "name": "March",
-      "uv": 0,
+      "kes": 0,
     },
     {
       "name": "Apr",
-      "uv": 278000,
+      "kes": 278000,
     },
     {
       "name": "May",
-      "uv": 300000,
+      "kes": 300000,
     },
     {
       "name": "June",
-      "uv": 239000,
+      "kes": 239000,
     },
   
   ]
@@ -41,7 +41,7 @@ function LoanHistory() {
           <BarChart data={data}>
             <XAxis dataKey="name" tickLine={false} />
             <Tooltip />
-            <Bar dataKey="uv" fill="#ffab00" />
+            <Bar dataKey="kes" fill="#ffab00" />
           </BarChart>
         </ResponsiveContainer>
       </div>

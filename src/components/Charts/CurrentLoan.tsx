@@ -17,27 +17,27 @@ function CurrentLoan() {
   const data = [
     {
       name: 'Jan',
-      uv: 15000,
+      kes: 15000,
     },
     {
       name: 'Feb',
-      uv: 20000,
+      kes: 20000,
     },
     {
       name: 'March',
-      uv: 25000,
+      kes: 25000,
     },
     {
       name: 'Apr',
-      uv: 14000,
+      kes: 14000,
     },
     {
       name: 'May',
-      uv: 15000,
+      kes: 15000,
     },
     {
       name: 'Jun',
-      uv: 30000,
+      kes: 30000,
     }
   ];
   return (
@@ -59,7 +59,7 @@ function CurrentLoan() {
             interval="preserveEnd"
             tickFormatter={(value) => `${value.toLocaleString().slice(0, -4)}k`} />
           <Tooltip />
-          <Area type="monotone" dataKey="uv" stroke="#ffab00" fill="url(#MyGradient)" />
+          <Area type="monotone" dataKey="kes" stroke="#ffab00" fill="url(#MyGradient)" />
         </AreaChart>
       </ResponsiveContainer>
     </div>
