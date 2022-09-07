@@ -40,7 +40,8 @@ function DiasporaLoan() {
   return (
     <ResponsiveContainer width="100%" height={200}>
       <PieChart width={400} height={400}>
-        <Legend verticalAlign="bottom" height={36} />
+        <Legend verticalAlign="bottom" iconType={'circle'}
+                margin={{top: 35}} />
         <Pie
           data={data}
           cx="50%"

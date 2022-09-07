@@ -17,6 +17,7 @@
     "recharts": "^2.1.13",
     "sass": "^1.54.8",
     "typescript": "^4.8.2",
+    "use-onclickoutside": "^0.4.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
