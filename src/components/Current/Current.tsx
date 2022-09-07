@@ -27,7 +27,7 @@ const Current = () => {
           <p>Active</p>
         </div>
         <div className={styles.chart}>
-          <DiasporaLoan/>
+          <DiasporaLoan />
         </div>
       </div>
     </div>

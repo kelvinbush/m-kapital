@@ -6,8 +6,8 @@ const FundingHero = () => {
   return (
     <div className={styles.hero}>
       <div className={styles.hero__actions}>
-        <p className={styles.header} >Get more funding today!</p>
-        <p className={styles.content} >What kind of funding would you like to get for your business?</p>
+        <p className={styles.header}>Get more funding today!</p>
+        <p className={styles.content}>What kind of funding would you like to get for your business?</p>
         <div className={styles.hero__actions__calls}>
           <div>
             <p>Get <br /> A Loan</p>

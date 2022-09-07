@@ -1,5 +1,5 @@
 import React from 'react';
-import {Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis} from 'recharts';
+import {Bar, BarChart, ResponsiveContainer, Tooltip, XAxis} from 'recharts';
 import styles from './LoanHistory.module.scss'
 import {BiChevronDown} from "react-icons/bi";
 

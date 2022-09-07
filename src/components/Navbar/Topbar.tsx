@@ -1,15 +1,9 @@
-import React, {useState, useRef, useEffect} from 'react';
+import React from 'react';
 import styles from './Topbar.module.scss'
-import {VscHome, VscMenu} from "react-icons/vsc";
-import {FiChevronDown, FiSearch} from "react-icons/fi";
-import {BiBell, BiBookReader} from "react-icons/bi";
+import {VscMenu} from "react-icons/vsc";
+import {FiChevronDown} from "react-icons/fi";
+import {BiBell} from "react-icons/bi";
 import {IoMailOutline} from "react-icons/io5";
-import {HiOutlineFolder} from "react-icons/hi";
-import {FaRegFileArchive} from "react-icons/fa";
-import {AiOutlinePieChart} from 'react-icons/ai';
-import useOnClickOutside from 'use-onclickoutside'
-import {BsPeople} from "react-icons/bs";
-import {GoMail} from "react-icons/go";
 
 // @ts-ignore
 const Topbar = ({toggle, showSidebar}) => {

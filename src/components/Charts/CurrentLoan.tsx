@@ -1,16 +1,5 @@
 import React from 'react';
-import {
-  Area,
-  AreaChart,
-  CartesianGrid,
-  Legend,
-  Line,
-  LineChart,
-  ResponsiveContainer,
-  Tooltip,
-  XAxis,
-  YAxis
-} from 'recharts';
+import {Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis} from 'recharts';
 
 function CurrentLoan() {
   
@@ -41,7 +30,7 @@ function CurrentLoan() {
     }
   ];
   return (
-    <div style={{height: "200px",  width: "auto"}}>
+    <div style={{height: "200px", width: "auto"}}>
       <ResponsiveContainer className={'area'}>
         <AreaChart
           data={data}
